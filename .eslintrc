@@ -10,7 +10,8 @@
 	"rules": {
 		"tailwindcss/no-custom-classname": "off",
 		"tailwindcss/classnames-order": "warn",
-		"svelte/no-at-html-tags": "warn"
+		"svelte/no-at-html-tags": "warn",
+    "svelte/no-unused-svelte-ignore": "warn"
 	},
 	"parser": "@typescript-eslint/parser",
 	"plugins": ["@typescript-eslint"],
