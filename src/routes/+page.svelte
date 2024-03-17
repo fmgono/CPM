@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Greet from "$components/greet.svelte";
+
 </script>
 
 <svelte:head>
@@ -9,6 +11,6 @@
 	/>
 </svelte:head>
 
-<main class="min-h-screen w-full py-12 md:py-24 lg:py-32 xl:py-48">
-	<h1>Hello</h1>
+<main class="min-h-screen w-full">
+	<Greet />
 </main>
