@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { createCombobox, melt, type ComboboxOptionProps } from '@melt-ui/svelte';
-	import { fly } from 'svelte/transition';
+	import { createCombobox, melt, type ComboboxOptionProps } from "@melt-ui/svelte";
+	import { fly } from "svelte/transition";
 
-	import { Check, ChevronUp, ChevronDown } from 'lucide-svelte';
+	import { Check, ChevronUp, ChevronDown } from "lucide-svelte";
 
 	type Manga = {
 		author: string;
@@ -12,53 +12,53 @@
 
 	let mangas: Manga[] = [
 		{
-			author: 'Kentaro Miura',
-			title: 'Berserk',
+			author: "Kentaro Miura",
+			title: "Berserk",
 			disabled: false
 		},
 		{
-			author: 'ONE',
-			title: 'Mob Psycho 100',
+			author: "ONE",
+			title: "Mob Psycho 100",
 			disabled: false
 		},
 		{
-			author: 'Hajime Isayama',
-			title: 'Attack on Titan',
+			author: "Hajime Isayama",
+			title: "Attack on Titan",
 			disabled: false
 		},
 		{
-			author: 'Junji Ito',
-			title: 'Uzumaki',
+			author: "Junji Ito",
+			title: "Uzumaki",
 			disabled: false
 		},
 		{
-			author: 'Yomi Sarachi',
-			title: 'Steins Gate',
+			author: "Yomi Sarachi",
+			title: "Steins Gate",
 			disabled: false
 		},
 		{
-			author: 'Tite Kubo',
-			title: 'Bleach',
+			author: "Tite Kubo",
+			title: "Bleach",
 			disabled: false
 		},
 		{
-			author: 'Masashi Kishimoto',
-			title: 'Naruto',
+			author: "Masashi Kishimoto",
+			title: "Naruto",
 			disabled: true
 		},
 		{
-			author: 'Katsura Hoshino',
-			title: 'D.Gray Man',
+			author: "Katsura Hoshino",
+			title: "D.Gray Man",
 			disabled: false
 		},
 		{
-			author: 'Tsugumi Ohba',
-			title: 'Death Note',
+			author: "Tsugumi Ohba",
+			title: "Death Note",
 			disabled: false
 		},
 		{
-			author: 'Hiromu Arakawa',
-			title: 'Fullmetal Alchemist',
+			author: "Hiromu Arakawa",
+			title: "Fullmetal Alchemist",
 			disabled: false
 		}
 	];
@@ -78,7 +78,7 @@
 	});
 
 	$: if (!$open) {
-		$inputValue = $selected?.label ?? '';
+		$inputValue = $selected?.label ?? "";
 	}
 
 	$: filteredMangas = $touchedInput

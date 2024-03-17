@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Greet from "$components/greet.svelte";
-
 </script>
 
 <svelte:head>

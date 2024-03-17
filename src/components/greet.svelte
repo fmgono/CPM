@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { invoke } from '@tauri-apps/api/tauri';
-	import Combobox from './combobox.svelte';
+	import { invoke } from "@tauri-apps/api/tauri";
+	import Combobox from "./combobox.svelte";
 
-	let name = '';
-	let greetMsg = '';
+	let name = "";
+	let greetMsg = "";
 
 	async function greet() {
-		greetMsg = await invoke('greet', { name });
+		greetMsg = await invoke("greet", { name });
 	}
 </script>
 

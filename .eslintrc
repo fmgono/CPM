@@ -11,7 +11,8 @@
 		"tailwindcss/no-custom-classname": "off",
 		"tailwindcss/classnames-order": "warn",
 		"svelte/no-at-html-tags": "warn",
-    "svelte/no-unused-svelte-ignore": "warn"
+    "svelte/no-unused-svelte-ignore": "warn",
+    // "quotes": ["error", "single"]
 	},
 	"parser": "@typescript-eslint/parser",
 	"plugins": ["@typescript-eslint"],
