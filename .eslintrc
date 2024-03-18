@@ -12,6 +12,7 @@
 		"tailwindcss/classnames-order": "warn",
 		"svelte/no-at-html-tags": "warn",
     "svelte/no-unused-svelte-ignore": "warn",
+    "@typescript-eslint/no-unused-vars": "warn"
     // "quotes": ["error", "single"]
 	},
 	"parser": "@typescript-eslint/parser",

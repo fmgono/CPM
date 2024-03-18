@@ -1,6 +1,6 @@
 <script lang="ts">
+	import Button from "$lib/components/ui/button/button.svelte";
 	import { invoke } from "@tauri-apps/api/tauri";
-	import Combobox from "./combobox.svelte";
 
 	let name = "";
 	let greetMsg = "";
@@ -12,8 +12,6 @@
 
 <div>
 	<input id="greet-input" placeholder="Enter a name..." bind:value={name} />
-	<button on:click={greet}>Greet</button>
+	<Button on:click={greet}>Greet</Button>
 	<p>{greetMsg}</p>
-
-	<Combobox />
 </div>
