@@ -1,3 +1,5 @@
+![Prismify render](https://github.com/fmgono/CPM/assets/31404706/e084874c-37e9-40fd-979f-0d1f94d4b05c)
+
 # What is CPM
 
 CPM stands for "Code Project Manager". It is a simple, cross-platform app that shows all the projects the dev has on their machine without the need to browse each directory by themselves, tells how much storage space is used for each project, and can also delete the dependencies to free space (by removing the node_modules folder for example).
@@ -23,6 +25,43 @@ These are the features that we want to build:
     4. 
 3. Backend
     1. Tauri (Rust) for handling the backend (file system)
+
+## Architecture
+CPM is a cross-platform application built using the Tauri framework. Tauri is based on Microsoft Edge-similar webview and Rust to work. Read about Tauri [here](https://tauri.app/)
+
+CPM relies on Rust API for file operations and Svelte, Typescript, and TailwindCSS for the webview. Rust codes are under the src-tauri directory whereas the webview code is under the src directory.
   
-## How to Install
-Still under development
+## How to Install?
+CPM is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/fmgono/CPM/discussions/) page. If you feel comfortable writing code using the tech stack we mentioned earlier, we highly encourage you to [contribute to this project](https://xplorer.space/docs/community/Contributing/).
+
+
+## Bug Reporting
+
+If you find any bugs, please report them by submitting an issue on our [issue page](https://github.com/fmgono/CPM/issues) with a detailed explanation. Giving some screenshots would also be very helpful.
+
+## Development
+
+If you want to run this project in your local system, please follow this guide:
+
+1. Fork this project
+
+2. Clone the project to your local system using this command
+```sh
+$ git clone https://github.com/<your_github_username>/CPM.git
+```
+
+3. Follow [this guide](https://tauri.studio/en/docs/getting-started/intro/#setting-up-your-environment) to set up Tauri environment
+
+4. Change directory to the root directory of this project
+5. Install all dependencies using your favorite package manager (either `npm`, `pnpm` or `bun`, but never tried `yarn`)
+
+```sh
+$ npm install
+```
+
+6. Run the project in development mode. Please note that it might takes some time for Cargo to install dependencies for the first run.
+
+```sh
+$ npm tauri dev
+```
+
