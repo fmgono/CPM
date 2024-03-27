@@ -17,7 +17,9 @@
 
 	let projects = [];
 	onMount(async () => {
-		// projects = await invoke("get_all_projects")
+		// projects = await invoke("list_folders")
+		projects = await invoke("list_projects");
+		// console.log('listProjects', listProjects)
 	});
 </script>
 
@@ -74,20 +76,21 @@
 			</TableRow>
 		</TableHeader>
 		<TableBody>
-			<TableRow>
-				<TableCell class="flex w-52 items-center gap-2 font-medium ">
-					<File class="w-[200px]" />
-					<p class="truncate">
-						Naval Ravikant Podcastasadsda Podcastasadsda Podcastasadsda Podcastasadsda
-						Podcastasadsda Podcastasadsda
-					</p>
-				</TableCell>
-				<TableCell>10 MB</TableCell>
-				<TableCell>10th Feb 2024</TableCell>
-				<TableCell>17th Feb 2024</TableCell>
-			</TableRow>
+			{#each projects as project}
+				<TableRow>
+					<TableCell class="flex w-52 items-center gap-2 font-medium ">
+						<File />
+						<p class="truncate">
+							{project.name}
+						</p>
+					</TableCell>
+					<TableCell>{project.size}</TableCell>
+					<TableCell>10th Feb 2024</TableCell>
+					<TableCell>17th Feb 2024</TableCell>
+				</TableRow>
+			{/each}
 		</TableBody>
 	</Table>
 
-	<pre>{JSON.stringify(projects)}</pre>
+	<!-- <pre>{JSON.stringify(projects)}</pre> -->
 </main>
