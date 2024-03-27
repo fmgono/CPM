@@ -2,7 +2,7 @@
 
 # What is CPM
 
-CPM stands for "Code Project Manager". It is a simple, cross-platform app that shows all the projects the dev has on their machine without the need to browse each directory by themselves, tells how much storage space is used for each project, and can also delete the dependencies to free space (by removing the node_modules folder for example).
+CPM stands for "Code Project Manager". It is a simple, cross-platform desktop app that shows all the projects the dev has on their machine without the need to browse each directory by themselves, tells how much storage space is used for each project, and can also delete the dependencies to free space (by removing the node_modules folder for example).
 
 ## Features
 These are the features that we want to build:
