@@ -39,29 +39,6 @@ CPM is currently under heavy development. You can give your suggestions and feed
 
 If you find any bugs, please report them by submitting an issue on our [issue page](https://github.com/fmgono/CPM/issues) with a detailed explanation. Giving some screenshots would also be very helpful.
 
-## Development
+## How to Contribute
 
-If you want to run this project in your local system, please follow this guide:
-
-1. Fork this project
-
-2. Clone the project to your local system using this command
-```sh
-$ git clone https://github.com/<your_github_username>/CPM.git
-```
-
-3. Follow [this guide](https://tauri.studio/en/docs/getting-started/intro/#setting-up-your-environment) to set up Tauri environment
-
-4. Change directory to the root directory of this project
-5. Install all dependencies using your favorite package manager (either `npm`, `pnpm` or `bun`, but never tried `yarn`)
-
-```sh
-$ npm install
-```
-
-6. Run the project in development mode. Please note that it might takes some time for Cargo to install dependencies for the first run.
-
-```sh
-$ npm tauri dev
-```
-
+Please read our [Contributing Guide](CONTRIBUTING.md)
