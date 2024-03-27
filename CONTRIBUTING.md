@@ -13,6 +13,10 @@ As a contributor, here are the guidelines we would like you to follow 👇
 
 Please, read and follow our [Code of Conduct](CODE_OF_CONDUCT.md) to help us keep this project open and inclusive.
 
+### Read the PRD
+
+Please, read and follow our [PRD](PRD.md) to give you an idea of how this app works.
+
 ## Get involved
 
 There are many ways to contribute to CPM, and many of them do not involve writing any code. Here are a few ideas to get started:
