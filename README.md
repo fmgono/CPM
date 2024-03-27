@@ -32,7 +32,7 @@ CPM is a cross-platform application built using the Tauri framework. Tauri is ba
 CPM relies on Rust API for file operations and Svelte, Typescript, and TailwindCSS for the webview. Rust codes are under the src-tauri directory whereas the webview code is under the src directory.
   
 ## How to Install?
-CPM is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/fmgono/CPM/discussions/) page. If you feel comfortable writing code using the tech stack we mentioned earlier, we highly encourage you to [contribute to this project](https://xplorer.space/docs/community/Contributing/).
+CPM is currently under heavy development. You can give your suggestions and feedback on our [Discussions](https://github.com/fmgono/CPM/discussions/) page.
 
 
 ## Bug Reporting
@@ -40,5 +40,4 @@ CPM is currently under heavy development. You can give your suggestions and feed
 If you find any bugs, please report them by submitting an issue on our [issue page](https://github.com/fmgono/CPM/issues) with a detailed explanation. Giving some screenshots would also be very helpful.
 
 ## How to Contribute
-
-Please read our [Contributing Guide](CONTRIBUTING.md)
+If you feel comfortable writing code using the tech stack we mentioned earlier, we highly encourage you to contribute and read our [Contributing Guide](CONTRIBUTING.md)
