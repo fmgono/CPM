@@ -6,15 +6,16 @@ This is documentation about the product, the behavior, the UX, and a description
 2. When the user opens the app, the user will see a splash screen or loading indicator while the system will scan all the user's directories.
 3. After the splash screen disappears and the scanning process is done, the user will see a list of projects they had with the Card Component.
 4. The information provided by the Card component is:
-    1. Folder Name / Project Name:
-    2. Path folder
-    3. Github Information (if any):
+    1. Icon Project: can be the favicon.ico (if web app) or just the logo of the programming language that is used in the project.
+    2. Folder Name / Project Name
+    3. Path folder
+    4. Github Information (if any):
          1. Remote repository (if any)
          2. Pull and push information
-    4. Size of the project directory
-    5. When the project is initiated
-    6. When the project is modified
-    7. A dropdown button, with this set of actions:
+    5. Size of the project directory
+    6. When the project is initiated
+    7. When the project is modified
+    8. A dropdown button, with this set of actions:
         1. Delete Dependencies:  the dependencies folder (ex: if the project is NodeJS, then it will delete the `node_modules` folder, for another programming language, soon)
              1. When clicked, will show AlertDialog with this information:
                  1. Title: "Deleting the dependencies folder?"
